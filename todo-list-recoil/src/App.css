@@ -1,0 +1,112 @@
+
+.container {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.container p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+form input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.filtros .ativo {
+  background: #16a34a;
+}
+
+.lista-tarefas {
+  list-style: none;
+  padding: 0;
+}
+
+.tarefa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.tarefa div {
+  display: flex;
+  gap: 8px;
+}
+
+.tarefa button:last-child {
+  background: #dc2626;
+}
+
+.tarefa button:last-child:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  form,
+  .tarefa {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filtros {
+    flex-wrap: wrap;
+  }
+
+  .tarefa div {
+    justify-content: flex-end;
+  }
+}
